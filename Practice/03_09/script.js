@@ -16,6 +16,7 @@ const backpack = {
     left: 26,
     right: 26,
   },
+  lidOpen: false,
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
@@ -24,3 +25,15 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log("The backpack objec: ", backpack);
+console.log("The pocketNum value:", backpack.pocketNum);
+
+console.log("Left before:", backpack.strapLength.left);
+
+backpack.newStrapLength(10, 15);
+
+console.log("Left after:", backpack.strapLength.left);
+
+backpack.toggleLid(true);
+console.log("Is lid open !: ", backpack.lidOpen);
