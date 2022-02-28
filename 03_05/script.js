@@ -20,3 +20,12 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log(backpack);
+console.log("The pocketNum Value: ", backpack.pocketNum);
+console.log("Strap length L: ", backpack.strapLength.left);
+
+//two other ways to call property of the object
+var query = "pocketNum";
+console.log("The pocketNum Value: ", backpack["pocketNum"]);
+console.log("The pocketNum Value: ", backpack[query]);
